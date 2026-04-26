@@ -10,18 +10,6 @@ mongoose.set('bufferCommands', false);
 // Load env vars
 dotenv.config();
 
-// Connect to database
-const startServer = async () => {
-    try {
-        await connectDB();
-        console.log('Database synchronization complete.');
-    } catch (err) {
-        console.error('Initial database connection failed:', err);
-    }
-};
-
-startServer();
-
 const app = express();
 
 // Middleware
