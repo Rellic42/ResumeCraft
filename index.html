@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ResumeCraft | Build Your Professional Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0ecf9",
+                        "on-surface": "#1b1b24",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#a44100",
+                        "on-tertiary-container": "#ffd2be",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "primary-container": "#4f46e5",
+                        "surface-tint": "#4d44e3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface": "#fcf8ff",
+                        "on-tertiary-fixed-variant": "#7b2f00",
+                        "surface-container-low": "#f5f2ff",
+                        "surface-container-highest": "#e4e1ee",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "on-surface-variant": "#464555",
+                        "surface-bright": "#fcf8ff",
+                        "primary": "#3525cd",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf8ff",
+                        "on-primary-fixed": "#0f0069",
+                        "on-primary-container": "#dad7ff",
+                        "inverse-on-surface": "#f3effc",
+                        "on-secondary-fixed": "#07006c",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container-high": "#eae6f4",
+                        "on-background": "#1b1b24",
+                        "secondary-fixed": "#e1e0ff",
+                        "secondary": "#4648d4",
+                        "on-secondary-container": "#fffbff",
+                        "surface-variant": "#e4e1ee",
+                        "tertiary-fixed": "#ffdbcc",
+                        "outline": "#777587",
+                        "surface-variant": "#e4e1ee",
+                        "inverse-surface": "#302f39",
+                        "inverse-primary": "#c3c0ff",
+                        "primary-fixed": "#e2dfff",
+                        "tertiary-fixed-dim": "#ffb695",
+                        "outline-variant": "#c7c4d8",
+                        "primary-fixed-dim": "#c3c0ff",
+                        "tertiary": "#7e3000",
+                        "on-secondary-fixed-variant": "#2f2ebe",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#3323cc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-content-width": "1280px",
+                        "2xl": "48px",
+                        "md": "16px",
+                        "xl": "32px",
+                        "sidebar-width": "280px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "h3": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "fontWeight": "600" }],
+                        "display": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "h2": ["24px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["30px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "h3": ["20px", { "lineHeight": "1.5", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcf8ff;
+        }
+    </style>
+    <script src="js/theme.js"></script>
+</head>
+<body class="font-body-md text-on-surface bg-background dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+<nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+<div class="flex justify-between items-center h-16 px-6 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a href="dashboard.html" class="text-xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400 cursor-pointer">ResumeCraft</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-gray-600 dark:text-gray-400 hover:text-indigo-600 font-label-md text-label-md transition-colors duration-200" href="templates.html">Templates</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+    <!-- Theme Toggle -->
+    <button onclick="toggleTheme()" class="p-2 text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors rounded-lg border border-gray-100 dark:border-gray-800 flex items-center justify-center">
+        <span class="material-symbols-outlined text-[20px] dark:hidden">dark_mode</span>
+        <span class="material-symbols-outlined text-[20px] hidden dark:block">light_mode</span>
+    </button>
+    <button onclick="window.location.href='login.html'" class="text-gray-600 dark:text-gray-400 hover:text-indigo-600 font-label-md text-label-md px-4 py-2 transition-colors duration-200">Sign In</button>
+    <button onclick="window.location.href='login.html?signup=true'" class="bg-indigo-600 hover:bg-indigo-700 text-white font-label-md text-label-md px-5 py-2.5 rounded-lg shadow-sm transition-all duration-200 active:scale-95">Get Started</button>
+</div>
+</div>
+</nav>
+<main>
+<section class="relative pt-20 pb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 text-primary border border-primary-container/20">
+<span class="material-symbols-outlined text-[18px]" data-icon="description">description</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Professional Resume Builder</span>
+</div>
+<h1 class="font-display text-display lg:text-[64px] lg:leading-[1.1] text-on-surface dark:text-white font-extrabold">
+                        Build a Professional Resume in Minutes
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-gray-400 max-w-lg">
+                        Land your dream job with our industry-specific templates. Designed for modern professionals.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button onclick="window.location.href='login.html'" class="bg-indigo-600 hover:bg-indigo-700 text-white font-label-md text-label-md px-8 py-4 rounded-xl shadow-lg shadow-indigo-200 transition-all duration-200 active:scale-95">
+                            Build Your Resume
+                        </button>
+<button onclick="window.location.href='templates.html'" class="bg-white dark:bg-gray-800 border border-outline-variant dark:border-gray-700 hover:bg-surface-container dark:hover:bg-gray-700 text-on-surface dark:text-gray-200 font-label-md text-label-md px-8 py-4 rounded-xl transition-all duration-200">
+                            View Examples
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-indigo-100 dark:bg-indigo-900/20 rounded-full blur-3xl opacity-60"></div>
+<div class="relative bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-2xl border border-outline-variant dark:border-gray-700">
+<img alt="Professional resume template interface" class="rounded-lg w-full h-auto" data-alt="clean minimalist resume template displayed on a high-end monitor with sleek typography and professional layout elements in a bright workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9tXhHytYZrOK-qI514hJ1MATEeETI9SHAa5ElGmkbfRvY1ibPf1qGXM1-7RIJsYiCqB-ixztlJ5Ifymw9nMyujjDJ9hluBhkJveI41gaZs1n6EO4ZcrLgOUP65V-B28RqHTFG5ZQuvgx6m8eIQ_whe0gITPJirvecui4iZFDZsA9jV8pp2eLsUUK10UVsf_Ux0UO6WtsHPro6aRajtqtZ6Z_zt3KVM5K5kX2nXzw2RID5HRJ0RanKTDzTvMJVy6R0uAhC7nIrZhs"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low dark:bg-gray-900">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-h1 text-h1 text-on-surface dark:text-white">Designed for Your Success</h2>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-gray-400 max-w-2xl mx-auto">
+                        Powerful features that help you create a standout resume without the stress of formatting.
+                    </p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-outline-variant dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
+<div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3 dark:text-white">Live Preview Builder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-400">
+                            See your changes in real-time. Our intuitive drag-and-drop builder makes formatting a breeze.
+                        </p>
+</div>
+<div class="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-outline-variant dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
+<div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="dashboard_customize">dashboard_customize</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3 dark:text-white">Industry-Specific Templates</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-400">
+                            Expertly designed templates tailored to your field—from Tech and Finance to Creative Arts.
+                        </p>
+</div>
+<div class="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-outline-variant dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
+<div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3 dark:text-white">Smart Suggestions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-400">
+                            Dynamic content structure to help you highlight your key achievements and skills.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface dark:bg-gray-950">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-h1 text-h1 text-on-surface dark:text-white">Trusted by Career Seekers</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-outline-variant dark:border-gray-700 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex gap-1 text-indigo-500 dark:text-indigo-400">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface-variant dark:text-gray-300">
+                                "The templates are modern and the builder is incredibly easy to use. I landed three interviews within a week of using ResumeCraft."
+                            </p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<img alt="Sarah Jenkins" class="w-12 h-12 rounded-full object-cover" data-alt="portrait of a confident professional woman smiling in a bright office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXEtE0koqqZNvUr53ktQ7HsVeurSyjqonnS9Q6_wG7jI75aSdKHUJQmfalyhsvwA5SCabLeL1eI81q0kTb-_Ts-E4CJZsEbub6-NMhiT3KsPJmBfnfk2pXLs_bTfr1Sl4vk8u8MmDgkCpSUlftybl0OCfPIOfcA8wubw7azoPZRFNipsglUDDHT7sWZpmtpJXFqnBmR1fu_vD_uRqW7gZq_6DrPQ0AgsS81a8T8uOXo0kIfRsCqVdh2iImv1VCuXazn97zxzy1IMc"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface dark:text-white">Sarah Jenkins</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-gray-400">Product Designer</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-outline-variant dark:border-gray-700 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex gap-1 text-indigo-500 dark:text-indigo-400">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface-variant dark:text-gray-300">
+                                "The industry-specific suggestions were a game-changer. It helped me articulate my impact in ways I hadn't thought of before."
+                            </p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<img alt="David Chen" class="w-12 h-12 rounded-full object-cover" data-alt="headshot of a young professional man wearing a blazer in a modern architectural setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgNsBtORYPpLdYi3KuV6LYgYkR5B6Ic97YIqwKk18UiWFW8QGqYNqft6YrbTsi8zynXN7xN_ArbkChVyQ7Ul_D41oNkI-_zw-9WH2t1PQLpOokQPovpH-r76_d46N5u-N1HjWt9y-1GYxdgevVS-mlyuBnwXet25aB0y9SO1lq5pdCjllZn1wHUywB_EmNAMLLEQlDvkL1Uiolicvt1k3_iTPtO3faGphY_2bNsBA1AK-7YnfReHecpxg_k_Sw7um7rDLKJRCtmo4"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface dark:text-white">David Chen</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-gray-400">Software Engineer</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-outline-variant dark:border-gray-700 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex gap-1 text-indigo-500 dark:text-indigo-400">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface-variant dark:text-gray-300">
+                                "Professional, clean, and efficient. It saved me hours of frustration with Word documents. Highly recommended!"
+                            </p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<img alt="Elena Rodriguez" class="w-12 h-12 rounded-full object-cover" data-alt="professional portrait of a woman with a warm expression in a corporate setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRY84tgUs-iwAe5nPW-URIjZZDeMdxpXkSjAnlc_E2rGQE2EHEnGgjk7zGeURXxFhL20IudWNOsqvQyiXEwV-WG9unl7FwTgy9_KAzYtPOyuz1m6PzZcAs_ZhkygD1dduIdxsBkhBGEqQlAxN066i2QR1dtxHYeyN8K3cci-7r-dz7wyEqAw0W9dNCVTsG8txVVb__wyCp2L7Tl7ikDfhzsAByDteGpTZCQ1Ir9ZnnVT6hwGyPmAyDZSLJnqaMMKQ-3JIHP-ZzWPY"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface dark:text-white">Elena Rodriguez</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-gray-400">Marketing Manager</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-primary text-white">
+<div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+<h2 class="font-display text-display text-white">Ready to elevate your career?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container">
+                    Join over 500,000 professionals who have built their future with ResumeCraft.
+                </p>
+<div class="flex justify-center">
+<button onclick="window.location.href='login.html?signup=true'" class="bg-white text-primary font-label-md text-label-md px-10 py-5 rounded-xl font-bold shadow-xl hover:bg-surface-container transition-all active:scale-95">
+                        Start Building Now — It's Free
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-50 dark:bg-gray-950 w-full border-t border-gray-200 dark:border-gray-800">
+<div class="py-12 px-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="space-y-6 max-w-xs">
+<a href="dashboard.html" class="font-bold text-gray-900 dark:text-gray-100 text-xl cursor-pointer hover:text-indigo-600 transition-colors">ResumeCraft</a>
+<p class="font-body-sm text-body-sm text-gray-500 dark:text-gray-400">
+                    The ultimate tool for career advancement. Empowering professionals to tell their story with clarity and confidence.
+                </p>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-indigo-600 transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-gray-400 hover:text-indigo-600 transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="text-gray-400 hover:text-indigo-600 transition-colors" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-2 gap-12">
+<div class="space-y-4">
+<h4 class="font-label-sm text-label-sm text-gray-900 dark:text-gray-100 uppercase tracking-widest">Product</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 font-body-sm text-body-sm transition-colors" href="templates.html">Templates</a></li>
+
+<li><a class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 font-body-sm text-body-sm transition-colors" href="templates.html">Resume Builder</a></li>
+</ul>
+</div>
+
+<div class="space-y-4">
+<h4 class="font-label-sm text-label-sm text-gray-900 dark:text-gray-100 uppercase tracking-widest">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 font-body-sm text-body-sm transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 font-body-sm text-body-sm transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 font-body-sm text-body-sm transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-800 py-8 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-500 dark:text-gray-400">© 2024 ResumeCraft Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-xs text-gray-500 hover:text-indigo-600 transition-colors" href="#">LinkedIn</a>
+<a class="text-xs text-gray-500 hover:text-indigo-600 transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

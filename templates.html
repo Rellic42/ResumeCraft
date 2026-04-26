@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ResumeCraft - Choose Your Template</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#f0ecf9",
+            "on-surface": "#1b1b24",
+            "error": "#ba1a1a",
+            "tertiary-container": "#a44100",
+            "on-tertiary-container": "#ffd2be",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "primary-container": "#4f46e5",
+            "surface-tint": "#4d44e3",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "surface": "#fcf8ff",
+            "on-tertiary-fixed-variant": "#7b2f00",
+            "surface-container-low": "#f5f2ff",
+            "surface-container-highest": "#e4e1ee",
+            "secondary-fixed-dim": "#c0c1ff",
+            "on-surface-variant": "#464555",
+            "surface-bright": "#fcf8ff",
+            "primary": "#3525cd",
+            "on-primary": "#ffffff",
+            "background": "#fcf8ff",
+            "on-primary-fixed": "#0f0069",
+            "on-primary-container": "#dad7ff",
+            "inverse-on-surface": "#f3effc",
+            "on-secondary-fixed": "#07006c",
+            "on-tertiary-fixed": "#351000",
+            "surface-container-high": "#eae6f4",
+            "on-background": "#1b1b24",
+            "secondary-fixed": "#e1e0ff",
+            "secondary": "#4648d4",
+            "on-secondary-container": "#fffbff",
+            "surface-variant": "#e4e1ee",
+            "tertiary-fixed": "#ffdbcc",
+            "outline": "#777587",
+            "surface-dim": "#dcd8e5",
+            "secondary-container": "#6063ee",
+            "inverse-surface": "#302f39",
+            "inverse-primary": "#c3c0ff",
+            "primary-fixed": "#e2dfff",
+            "tertiary-fixed-dim": "#ffb695",
+            "outline-variant": "#c7c4d8",
+            "primary-fixed-dim": "#c3c0ff",
+            "tertiary": "#7e3000",
+            "on-secondary-fixed-variant": "#2f2ebe",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#3323cc"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "max-content-width": "1280px",
+            "2xl": "48px",
+            "md": "16px",
+            "xl": "32px",
+            "sidebar-width": "280px",
+            "base": "8px",
+            "xs": "4px",
+            "lg": "24px",
+            "sm": "8px"
+          },
+          "fontFamily": {
+            "label-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "label-sm": ["Inter"],
+            "display": ["Inter"],
+            "h2": ["Inter"],
+            "h1": ["Inter"],
+            "body-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "h3": ["Inter"]
+          },
+          "fontSize": {
+            "label-md": ["14px", {"lineHeight": "1", "fontWeight": "500"}],
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
+            "display": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "h2": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "h1": ["30px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+            "h3": ["20px", {"lineHeight": "1.5", "fontWeight": "600"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .template-card:hover .template-overlay {
+      opacity: 1;
+    }
+  </style>
+    <script src="js/theme.js"></script>
+</head>
+<body class="bg-surface dark:bg-gray-950 text-on-surface dark:text-gray-100 font-body-md antialiased transition-colors duration-300">
+<!-- SideNavBar Component -->
+<aside class="fixed left-0 top-0 h-screen w-64 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col z-40 hidden lg:flex">
+<div class="p-6">
+<a href="dashboard.html" class="block text-lg font-black text-indigo-600 cursor-pointer">ResumeCraft</a>
+</div>
+<div class="px-6 py-4 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary-container">
+            <img class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu1W9lGfCFx3SjmZE_GPX0nGidzUjpj1JgieHT1modQ_pPEkpBja6WG64MF6cb5htq3JLwsM2Ig-UmIuytO9iWWDm9tWjMDXlbZmh_pM_G1KnxCPmV5j747GQCwt8GpC9ql4VFhtZTnYRLAX-UKlQu-9dtvSUDxGk9ZaDUqklYRwdZoHJQG0nldcLWbgnK5ukNo4evYEMiknp39LMUwvF6oTVyFk8HgnMsjyh-n3UHu09YTKPGvMHGDrrF7ciWLcaA8LZhH5MKtoY"/>
+        </div>
+        <div>
+            <p id="user-name-sidebar" class="font-label-md text-label-md text-on-surface dark:text-gray-200">Loading...</p>
+        </div>
+    </div>
+    <!-- Theme Toggle -->
+    <button onclick="toggleTheme()" class="p-2 text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors rounded-lg flex items-center justify-center">
+        <span class="material-symbols-outlined text-[20px] dark:hidden">dark_mode</span>
+        <span class="material-symbols-outlined text-[20px] hidden dark:block">light_mode</span>
+    </button>
+</div>
+<div class="mt-4 flex-grow px-6">
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg group" href="dashboard.html">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-indigo-600">description</span>
+<span class="font-label-md">My Resumes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/20 border-l-4 border-indigo-600 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-md">Templates</span>
+</a>
+<a id="admin-link" class="hidden flex items-center gap-3 px-4 py-3 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200" href="admin.html">
+<span class="material-symbols-outlined" data-icon="admin_panel_settings">admin_panel_settings</span>
+<span class="font-label-md">Admin Panel</span>
+</a>
+
+
+<a class="flex items-center gap-3 px-4 py-3 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg group" href="#">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-indigo-600">help</span>
+<span class="font-label-md">Help</span>
+</a>
+</nav>
+</div>
+<div class="p-6 space-y-4">
+<button onclick="createNewResume('modern-tech')" class="w-full bg-primary-container text-white py-3 px-4 rounded-lg font-label-md text-label-md shadow-md hover:bg-secondary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">add</span>
+        Create New Resume
+      </button>
+<a onclick="logout()" class="flex items-center gap-3 px-2 py-3 text-gray-600 dark:text-gray-400 hover:text-error transition-all duration-200 cursor-pointer">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-md">Logout</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:ml-64 min-h-screen">
+<!-- Top Bar Placeholder (Responsive) -->
+<header class="h-16 lg:hidden bg-white/80 dark:bg-gray-900/80 backdrop-blur-md sticky top-0 z-30 px-6 flex items-center justify-between border-b border-gray-200 dark:border-gray-800">
+<a href="dashboard.html" class="text-xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400 cursor-pointer">ResumeCraft</a>
+<span class="material-symbols-outlined dark:text-white">menu</span>
+</header>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-10">
+<!-- Header -->
+<div class="mb-10">
+<h1 class="font-h1 text-on-background dark:text-white mb-2">Choose Your Template</h1>
+<p class="text-on-surface-variant dark:text-gray-400 font-body-md">Pick a professional layout designed to beat Applicant Tracking Systems (ATS).</p>
+</div>
+<!-- Filter Bar -->
+<div class="flex flex-col md:flex-row gap-4 mb-12 p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl shadow-sm">
+<div class="flex-1 space-y-2">
+<label class="font-label-sm text-gray-500 ml-1">Industry</label>
+<div class="relative">
+<select id="industry-filter" class="w-full appearance-none bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3 pr-10 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 font-label-md">
+<option value="all">All Industries</option>
+<option value="it">IT</option>
+<option value="marketing">Marketing</option>
+<option value="finance">Finance</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">expand_more</span>
+</div>
+</div>
+<div class="flex-1 space-y-2">
+<label class="font-label-sm text-gray-500 ml-1">Experience Level</label>
+<div class="relative">
+<select id="level-filter" class="w-full appearance-none bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3 pr-10 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 font-label-md">
+<option value="all">All Levels</option>
+<option value="entry">Entry</option>
+<option value="mid">Mid</option>
+<option value="senior">Senior</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">expand_more</span>
+</div>
+</div>
+<div class="flex items-end">
+<button onclick="resetFilters()" class="w-full md:w-auto px-8 py-3 bg-gray-900 dark:bg-gray-700 text-white rounded-lg font-label-md hover:bg-gray-800 transition-colors">
+            Reset Filters
+          </button>
+</div>
+</div>
+<!-- Grid Gallery -->
+<div id="template-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+    <!-- Template Card 1: Modern Tech -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow" 
+         data-id="modern-tech" data-industry="it,marketing,finance" data-level="entry,mid,senior">
+        <div class="aspect-[3/4] bg-gray-100 dark:bg-gray-800 overflow-hidden relative">
+            <img class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARlDoQsYmfchmYKAAcIS-6Syo2bEne1O8L03Vtv4X00wcKd6Yxr6LpoNSU_hT08-rR1EMZBDx7PFBUImHrwNNvpkJfEGehXHfE0KwSuE0xZHVRraacG6Ly-gi0Ip4uRCyysL9on24oaIktVJ4H6ZDwIR_1_0y1vxDuMmLjU-xRFHZ9OR4_QT0uL0gqEqFRJVFT352djBgyoschgpN_5fJTda5D_K-ZYrI9Bf8OV7GPhXbqPpp90PjZXGbv2xXfKR_zD8rezxeLOSY"/>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('modern-tech')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+            <div>
+                <h3 class="font-h3 text-gray-900 dark:text-white mb-1">Modern Tech</h3>
+                <p class="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">IT &amp; Software</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 2: Creative Professional -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="creative-prof" data-industry="marketing" data-level="mid,senior">
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden relative">
+            <img class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg9u2asyawSvMbf4MI1dBLzWkDDfr59-m0DNBGy2O3FxRaylxp1TfS-zYA6p4IOhCE6XLdzIoVCV9qduqjWZK8VOqAkXBLYE-gfJeSJdUZ-zdyvNCOqcE6rDHQ7oXwzJYxWpDLsYssgeFOf-_GgX5y6hK4Z8_J087I4boudxY1gaOdWuiABfTdyxpPXMmCfFZ419PDDsRlmh-27tafKWx0KUA50HE1dqB8QAgQO6nHjPyD0vE4Wiro-doUcjdbA7owOpEZeMKC2fQ"/>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('creative-prof')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white border-t border-gray-100">
+            <div>
+                <h3 class="font-h3 text-gray-900 mb-1">Creative Professional</h3>
+                <p class="text-xs font-medium text-indigo-600 uppercase tracking-wider">Marketing</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 3: Executive Finance -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="exec-finance" data-industry="finance" data-level="senior">
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden relative">
+            <img class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg6G5NRMF4OQuwo0M199jtcUBenahjrKYYj_WkfyJxtNjdLHfAJgOrgD9kpqgUNxYgZG05W8l3ibRocUzLIGejvwEbgEEy5pZ69cRymCmiZ9XsZ3xsSDPwkcl4sRv1SefhJ3h8X8uBMsQyJ-PgEPNn5bLCAjSr8bnkmJIT4WD5WptVscsokOjZnEFVkL9GJRFcQuoztqpRUn_weLM8OS-OqKQhj24KAG7LoRSWbP0gia7Ji5hdv3ee37cOUgKbNejV-rfW56BGOyk"/>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('exec-finance')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white border-t border-gray-100">
+            <div>
+                <h3 class="font-h3 text-gray-900 mb-1">Executive Finance</h3>
+                <p class="text-xs font-medium text-indigo-600 uppercase tracking-wider">Finance</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 4: Minimalist Base -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="minimal-base" data-industry="it,finance" data-level="entry,mid,senior">
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden relative">
+            <img class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvMS3LzkFlszjuRksxAIYilfWjeTwvBdnykQPJxrJwBAdE9dQy26rC-H-TOyKyuuv4hPuCjBOGV2P_x8K47gWETgtq5XJWQ7M6Q_binMdhqOr5QiNiKYQiWVvTmcCPQ-NpyXpZ3KGgSc1X3_55YHqYuoye0dbLFumqOsz5tGHN1wEeoVSHJ2QvShyubArzYCoO2lWNxQQkRA6MlnV5oJh4JlehNsfIj5ytNstcKEq7vwJ3UAbSXLBcSK5_GMX0zJywktHL0Gr6y74"/>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('minimal-base')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white border-t border-gray-100">
+            <div>
+                <h3 class="font-h3 text-gray-900 mb-1">Minimalist Base</h3>
+                <p class="text-xs font-medium text-indigo-600 uppercase tracking-wider">Entry Level</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 5: Impact Builder -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="impact-builder" data-industry="it,marketing,finance" data-level="mid,senior">
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden relative">
+            <img class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd9HD173LyaU1UfgvjPsQJVD_rgBAmsE9c_j-XOALkBaEiQmefftyXo79m57cMhtTht0tQT3w1N1nIzNzr1Cx3P-4EtNRIWF18MdMnPW3QtxYRjr9wXg_666FKNvnE8DaBhJKra11ITpZr45nJXhJYR_8OaO8597hLUa0stUhHlQSkWHhPZnYDzJsR-9bOd4-WcHS3Jfc-mb106wA1e9m69MGq79xGwiIIypTu6omkfzwqnxuG5dT005VeU-98f530_Y2Gq6wkUMY"/>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('impact-builder')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white border-t border-gray-100">
+            <div>
+                <h3 class="font-h3 text-gray-900 mb-1">Impact Builder</h3>
+                <p class="text-xs font-medium text-indigo-600 uppercase tracking-wider">Mid Senior</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 6: Visual Artist -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="visual-artist" data-industry="it,marketing,finance" data-level="senior">
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden relative">
+            <img class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQkxj0u4CbrUeFwNOsyWcggcUODIQN4Kva9DIU_hrsa7WfIdEJIfIKiNJ5D3U3Q6Mesv8bpV_hjsYq2OYKTeRgkEGdU1txB9bfT_XtgtBbPVhz0NUaq19J5F0T130kyP0yWkR0q4ojBqFpmJNCeIeXognvrrfTwxU1kIJu1TNjpsyeYr_dILKzuRauQTUG7eimXWayajiFVIPhgGdzZDlQLNqPKnGFSq9yhhNYhusxKUjO9vSB7kKW-1qV27rNYs-gbAwmcAOs-tI"/>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('visual-artist')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white border-t border-gray-100">
+            <div>
+                <h3 class="font-h3 text-gray-900 mb-1">Visual Artist</h3>
+                <p class="text-xs font-medium text-indigo-600 uppercase tracking-wider">Design</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 7: Classic Retro -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="classic-retro" data-industry="finance" data-level="mid,senior">
+        <div class="aspect-[3/4] bg-gray-100 dark:bg-gray-800 overflow-hidden relative flex items-center justify-center">
+            <div class="text-center p-8">
+                <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">history_edu</span>
+                <p class="text-gray-400 font-serif italic text-sm">Classic Retro Preview</p>
+            </div>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('classic-retro')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+            <div>
+                <h3 class="font-h3 text-gray-900 dark:text-white mb-1">Classic Retro</h3>
+                <p class="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Traditional</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 8: Bold Sidebar -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="bold-sidebar" data-industry="marketing" data-level="senior">
+        <div class="aspect-[3/4] bg-gray-100 dark:bg-gray-800 overflow-hidden relative flex items-center justify-center">
+            <div class="text-center p-8">
+                <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">view_sidebar</span>
+                <p class="text-gray-400 font-bold text-sm">Bold Sidebar Preview</p>
+            </div>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('bold-sidebar')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+            <div>
+                <h3 class="font-h3 text-gray-900 dark:text-white mb-1">Bold Sidebar</h3>
+                <p class="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Modern</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 9: Minimal Modern -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="minimal-modern" data-industry="it" data-level="entry,mid,senior">
+        <div class="aspect-[3/4] bg-gray-100 dark:bg-gray-800 overflow-hidden relative flex items-center justify-center">
+            <div class="text-center p-8">
+                <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">border_clear</span>
+                <p class="text-gray-400 text-sm">Minimal Modern Preview</p>
+            </div>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('minimal-modern')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+            <div>
+                <h3 class="font-h3 text-gray-900 dark:text-white mb-1">Minimal Modern</h3>
+                <p class="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Clean</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 10: Startup Vibe -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="startup-vibe" data-industry="marketing" data-level="entry,mid">
+        <div class="aspect-[3/4] bg-gray-100 dark:bg-gray-800 overflow-hidden relative flex items-center justify-center">
+            <div class="text-center p-8">
+                <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">rocket_launch</span>
+                <p class="text-gray-400 font-bold text-sm">Startup Vibe Preview</p>
+            </div>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('startup-vibe')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+            <div>
+                <h3 class="font-h3 text-gray-900 dark:text-white mb-1">Startup Vibe</h3>
+                <p class="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Creative</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 11: Academic Research -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="academic-research" data-industry="finance" data-level="mid,senior">
+        <div class="aspect-[3/4] bg-gray-100 dark:bg-gray-800 overflow-hidden relative flex items-center justify-center">
+            <div class="text-center p-8">
+                <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">school</span>
+                <p class="text-gray-400 font-serif text-sm">Academic Research Preview</p>
+            </div>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('academic-research')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+            <div>
+                <h3 class="font-h3 text-gray-900 dark:text-white mb-1">Academic Research</h3>
+                <p class="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Formal</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Card 12: Elegant Chic -->
+    <div class="template-card relative group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+         data-id="elegant-chic" data-industry="marketing,finance" data-level="senior">
+        <div class="aspect-[3/4] bg-gray-100 dark:bg-gray-800 overflow-hidden relative flex items-center justify-center">
+            <div class="text-center p-8">
+                <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">auto_awesome</span>
+                <p class="text-gray-400 uppercase tracking-[0.2em] text-[10px]">Elegant Chic Preview</p>
+            </div>
+            <div class="template-overlay absolute inset-0 bg-indigo-900/40 backdrop-blur-[2px] flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                <button onclick="createNewResume('elegant-chic')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-bold shadow-xl hover:scale-105 transition-transform">Use This Template</button>
+            </div>
+        </div>
+        <div class="p-5 flex justify-between items-center bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+            <div>
+                <h3 class="font-h3 text-gray-900 dark:text-white mb-1">Elegant Chic</h3>
+                <p class="text-xs font-medium text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Boutique</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Placeholder -->
+<footer class="mt-20 pt-10 border-t border-gray-200">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-10">
+<a href="dashboard.html" class="block font-bold text-gray-900 dark:text-white cursor-pointer">ResumeCraft</a>
+<div class="flex gap-8">
+<a class="text-xs text-gray-500 hover:text-indigo-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-xs text-gray-500 hover:text-indigo-600 transition-colors" href="#">Terms of Service</a>
+<a class="text-xs text-gray-500 hover:text-indigo-600 transition-colors" href="#">Contact Us</a>
+</div>
+<div class="text-xs text-gray-500">© 2024 ResumeCraft Inc. All rights reserved.</div>
+</div>
+</footer>
+</div>
+</main>
+<!-- Mobile Bottom Nav -->
+<nav class="lg:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 px-6 py-3 flex justify-around items-center z-50">
+<button onclick="window.location.href='dashboard.html'" class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">description</span>
+<span class="text-[10px] font-bold">Resumes</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-indigo-600">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-[10px] font-bold">Templates</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-[10px] font-bold">Stats</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px] font-bold">Settings</span>
+</button>
+</nav>
+<script src="js/api.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        if (!checkAuth()) return;
+        
+        try {
+            const userNameSidebar = document.getElementById('user-name-sidebar');
+            const profile = await fetchAPI('/auth/profile');
+            if (userNameSidebar) {
+                userNameSidebar.innerText = profile.name || 'User';
+            }
+
+            // Show admin link if role is admin
+            if (profile.role === 'admin') {
+                const adminLink = document.getElementById('admin-link');
+                if (adminLink) adminLink.classList.remove('hidden');
+            }
+        } catch (error) {
+            console.error('Error fetching profile:', error);
+        }
+
+        const industryFilter = document.getElementById('industry-filter');
+        const levelFilter = document.getElementById('level-filter');
+
+        const updateFilters = () => {
+            const industry = industryFilter.value;
+            const level = levelFilter.value;
+            const cards = document.querySelectorAll('.template-card');
+
+            cards.forEach(card => {
+                const cardId = card.getAttribute('data-id');
+                const cardIndustries = card.getAttribute('data-industry').split(',');
+                const cardLevels = card.getAttribute('data-level').split(',');
+
+                let show = false;
+
+                // All Industries / All Levels logic
+                if (industry === 'all' && level === 'all') {
+                    show = true;
+                } 
+                // IT logic
+                else if (industry === 'it') {
+                    if (level === 'entry') {
+                        show = (cardId === 'modern-tech' || cardId === 'minimal-base' || cardId === 'minimal-modern');
+                    } else if (level === 'mid') {
+                        show = (cardId === 'modern-tech' || cardId === 'minimal-base' || cardId === 'impact-builder' || cardId === 'minimal-modern');
+                    } else if (level === 'senior') {
+                        show = (cardId === 'modern-tech' || cardId === 'minimal-base' || cardId === 'impact-builder' || cardId === 'visual-artist' || cardId === 'minimal-modern');
+                    } else if (level === 'all') {
+                        show = cardIndustries.includes('it');
+                    }
+                }
+                // Marketing logic
+                else if (industry === 'marketing') {
+                    if (level === 'entry') {
+                        show = (cardId === 'modern-tech' || cardId === 'startup-vibe');
+                    } else if (level === 'mid') {
+                        show = (cardId === 'impact-builder' || cardId === 'startup-vibe' || cardId === 'creative-prof');
+                    } else if (level === 'senior') {
+                        show = (cardId === 'visual-artist' || cardId === 'bold-sidebar' || cardId === 'elegant-chic');
+                    } else if (level === 'all') {
+                        show = cardIndustries.includes('marketing');
+                    }
+                }
+                // Finance logic
+                else if (industry === 'finance') {
+                    if (level === 'entry') {
+                        show = (cardId === 'modern-tech' || cardId === 'minimal-base');
+                    } else if (level === 'mid') {
+                        show = (cardId === 'impact-builder' || cardId === 'classic-retro' || cardId === 'academic-research');
+                    } else if (level === 'senior') {
+                        show = (cardId === 'visual-artist' || cardId === 'exec-finance' || cardId === 'elegant-chic' || cardId === 'academic-research');
+                    } else if (level === 'all') {
+                        show = cardIndustries.includes('finance');
+                    }
+                }
+                // Only Level filter (Industry is all)
+                else if (industry === 'all' && level !== 'all') {
+                    show = cardLevels.includes(level);
+                }
+
+                if (show) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        };
+
+        industryFilter.addEventListener('change', updateFilters);
+        levelFilter.addEventListener('change', updateFilters);
+    });
+
+    function resetFilters() {
+        document.getElementById('industry-filter').value = 'all';
+        document.getElementById('level-filter').value = 'all';
+        const cards = document.querySelectorAll('.template-card');
+        cards.forEach(card => card.style.display = 'block');
+    }
+
+    async function createNewResume(templateId = 'modern-tech') {
+        if (!checkAuth()) return;
+        try {
+            const resume = await fetchAPI('/resumes', { 
+                method: 'POST',
+                body: JSON.stringify({ 
+                    title: 'Untitled Resume',
+                    templateId: templateId
+                })
+            });
+            window.location.href = `builder.html?id=${resume._id}`;
+        } catch (error) {
+            console.error('Error creating resume:', error);
+            alert('Failed to create a new resume: ' + error.message);
+        }
+    }
+</script>
+</body></html>
