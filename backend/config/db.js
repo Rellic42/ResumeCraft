@@ -10,7 +10,10 @@ const connectDB = async () => {
         // Log a masked version for debugging
         console.log(`Attempting to connect to MongoDB...`);
         
-        const conn = await mongoose.connect(uri);
+        const conn = await mongoose.connect(uri, {
+            serverSelectionTimeoutMS: 5000,
+            socketTimeoutMS: 45000,
+        });
         console.log(`MongoDB Connected: ${conn.connection.host}`);
     } catch (error) {
         console.error(`DATABASE CONNECTION ERROR: ${error.message}`);
