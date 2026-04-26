@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
@@ -25,6 +26,22 @@ app.use(express.json());
 app.use(cors());
 
 // Route files
+app.use(async (req, res, next) => {
+    if (mongoose.connection.readyState !== 1) {
+        try {
+            await connectDB();
+            next();
+        } catch (err) {
+            res.status(503).json({ 
+                message: 'Database connection failed. Please check Atlas IP whitelist and credentials.',
+                error: err.message 
+            });
+        }
+    } else {
+        next();
+    }
+});
+
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/resumes', require('./routes/resumeRoutes'));
 app.use('/api/templates', require('./routes/templateRoutes'));
