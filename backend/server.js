@@ -4,6 +4,9 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
 
+// Disable buffering so errors happen immediately
+mongoose.set('bufferCommands', false);
+
 // Load env vars
 dotenv.config();
 
